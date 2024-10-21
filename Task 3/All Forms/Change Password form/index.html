@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Modal Popup -->
+<div id="changePasswordModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Change Password</h2>
+        <form id="changePasswordForm">
+            <input type="password" id="currentPassword" placeholder="Current Password" required />
+            <input type="password" id="newPassword" placeholder="New Password" required oninput="checkPasswordStrength()" />
+            <div id="passwordStrength" class="strength-meter"></div>
+            <input type="password" id="confirmNewPassword" placeholder="Confirm New Password" required />
+            <button type="submit" onclick="changePassword()">Change Password</button>
+            <button><a href="/All Forms/Sign in Form/index.html">Sign In</a></button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

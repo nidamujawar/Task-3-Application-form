@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Modal Popup -->
+<div id="forgotPasswordModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Forgot Password</h2>
+        <form id="forgotPasswordForm">
+            <input type="email" id="email" placeholder="Enter your email" required />
+            <button type="submit" onclick="sendResetLink()">Send Reset Link</button>
+            <p id="feedbackMessage" class="feedback"></p>
+            <button><a href="/All Forms/Sign in Form/index.html">Back to Sign in</a></button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
